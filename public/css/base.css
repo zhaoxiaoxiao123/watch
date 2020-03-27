@@ -1,0 +1,48 @@
+/* css样式重置 */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color:#000;
+}
+ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+input{
+  outline:0;
+  border:0;
+  box-shadow:0;
+}
+/* bootstrap 通用样式 */
+.d_f_r{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.t_a_c{
+  text-align:center;
+}
+.b-g-w{  /* 背景白色 */ 
+  background-color:#fff;
+}
+/* 页面的样式 */
+html{
+  font-size: 62.5%;
+}
+body{
+  color:#8d8d8d;
+  font:normal 400 1.2rem 'Swatch font',Helvetica,Arial;
+  background-color: #eaeaea;
+  line-height: 1.42857143;
+}
+body>.container{
+  width:100%;
+  margin:0 auto;
+}
+
+

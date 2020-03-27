@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  body>ul>li>ul{
+  /* 如果只做单纯的显示，就这个：display:none; */
+  height:0;
+  overflow:hidden;
+  transition:all .5s linear;
+}
+
+body>ul>li:hover>ul{
+  /* 如果只做单纯的显示，就这个：display:block; */
+  height:auto;
+}
+
+  </style>
+  <script>
+    function list(){
+      let xhr =new XMLHttpRequest();
+      xhr.onreadystatechange=function()
+      {
+          if (xhr.readyState==4 && xhr.status==200)
+          {
+            // let result=xhr.responseText;
+            let arr=JSON.parse(xhr.responseText);
+            // console.log(result);
+            let str =`<div class="img">
+            <a href="mall_list.html?f_id=${arr[1].fid}">
+              <img src="img/mall_index/${arr[1].fpic}" class="w-100">
+            </a>
+            </div>
+            <div class="title">
+            <a href="mall_list.html">
+              <b>${arr[1].fname}</b>
+              <br>
+              ${arr[1].fdes}
+              <br>
+              <br>
+            </a>
+          </div>`;
+            d.innerHTML=str;
+          }
+      }
+      xhr.open("get",'/list',true);
+      xhr.send();
+          }
+  </script>
+</head>
+<body>
+  <button onclick="list()">点击</button>
+  <div id="d"></div>
+  
+</body>
+</html>

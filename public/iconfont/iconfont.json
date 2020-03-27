@@ -1,0 +1,23 @@
+{
+  "id": "1665213",
+  "name": "test",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12686633",
+      "name": "锁",
+      "font_class": "icon_suo-",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "552803",
+      "name": "地区",
+      "font_class": "diqu",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    }
+  ]
+}

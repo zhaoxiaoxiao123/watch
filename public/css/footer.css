@@ -1,0 +1,42 @@
+body{
+  background:url(../img/bg.jpg) repeat center top;
+}
+.container{
+  width:1000px;
+}
+.con-top,.con-bottom{
+  padding:30px 15px;
+}
+.con-top{
+  margin-bottom:30px;
+}
+.con-top h3{
+  font-size:22px;
+  font-weight:normal;
+  color:#757575;
+  margin-bottom:22px;
+}
+.footer-nav{
+  padding-bottom:16px;
+  margin-bottom:5px;
+}
+.footer-nav li,.licenses li{
+  display:inline-block;
+  padding-left:12px;
+  padding-right:13px;
+}
+.footer-nav li a,.footer-copy a{
+  color:#646464;
+}
+.footer-copy{
+  color:#757575;
+}
+.licenses{
+  margin-top:10px;
+  margin-bottom:5px;
+  padding:16px;
+}
+.accessibility-icon{
+  margin-top:20px;
+  margin-bottom:12px;
+}

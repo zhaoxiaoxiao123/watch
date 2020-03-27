@@ -1,0 +1,177 @@
+/* 去掉a下划线 */
+.reinsurance-block a,.footer-right .connect a{
+  text-decoration: none;
+}
+.reinsurance-block{
+  padding:49px 0 50px;
+  margin-top:20px;
+}
+.reinsurance-block>.item>a>.icon,.footer-left .icon{
+  background-image:url("../img/sprite-other.png");
+  width:35px;
+  height:33px;
+  display:inline-block;
+  margin-bottom:10px;
+}
+.reinsurance-block>.item>a>.icon.made{
+  background-position: 0 0;
+  transition:all 0.3s linear;
+}
+.reinsurance-block>.item:hover>a>.icon.made{
+  background-position: 0 -33px;
+}
+.reinsurance-block>.item>a>.icon.return{
+  background-position: -35px 0;
+  transition:all 0.3s linear;
+}
+.reinsurance-block>.item:hover>a>.icon.return{
+  background-position: -35px -33px;
+}
+.reinsurance-block>.item>a>.icon.serve{
+  background-position: -73px 0;
+  width:64px;
+  transition:all 0.3s linear;
+}
+.reinsurance-block>.item:hover>a>.icon.serve{
+  background-position: -73px -33px;
+}
+.reinsurance-block>.item>a>.icon.pay{
+  background-position: -136px 0;
+  width:30px;
+  transition:all 0.3s linear;
+}
+.reinsurance-block>.item:hover>a>.icon.pay{
+  background-position: -136px -33px;
+}
+.reinsurance-block>.item>a>.icon.guarantee{
+  background-position: -166px 0;
+  transition:all 0.3s linear;
+}
+.reinsurance-block>.item:hover>a>.icon.guarantee{
+  background-position: -166px -33px;
+}
+.reinsurance-block>.item>a>.icon.feedback{
+  background-position: -201px 0;
+  transition:all 0.3s linear;
+}
+.reinsurance-block>.item:hover>a>.icon.feedback{
+  background-position: -201px -33px;
+}
+.reinsurance-block>.item>a:last-child{
+  color:#000;
+  font-size:12px;
+}
+/*   动画效果 */
+
+.reinsurance-block>.item:hover>a,.footer-left .bottom>div>p:hover,.footer-right>.connect>a:hover{
+  color:#f00;
+}
+
+
+.footer-left .icon.weibo{
+  background-position: 0px -80px;
+}
+.footer-left .icon.weixin{
+  background-position: -40px -80px;
+}
+.footer-left .icon.code{
+  background-position: 0px -160px;
+  width:130px;
+  height:135px;
+}
+.footer-left .follow{
+  padding:20px 40px;
+  margin-left:-12.5px;
+}
+.footer-left .news{
+  padding:25px 20px 20px;
+  margin-left:12.5px;
+  background-color:#8d8d8d;
+}
+.footer-left .top{
+  margin-top:25px;
+  margin-bottom:20px;
+}
+.footer-left .bottom{
+  padding:40px 200px 50px 40px;
+  margin-bottom:20px;
+}
+.footer-left h4,.footer-right .post div{
+  margin:22px 0;font-size:15px;font-weight:bold;
+}
+.btn-danger1 {
+  color: #fff;
+  background-color: #f00;
+}
+
+.btn-danger1:hover {
+  color: #fff;
+  background-color: #000;
+}
+.footer-left .news>input::placeholder{
+  font-size: 12px;
+  color:#c2c2c2;
+}
+.footer-left .bottom>div>h3,.footer-right h3{
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.footer-left .bottom>div>p{
+  font-size: 1rem;
+  color:#8d8d8d;
+}
+/* 关注我们   小屏布局 */
+@media (max-width: 576px) {
+  .follow.col-xs-12{
+    margin-bottom: 20px;
+  }
+  .footer-left .bottom{
+    display:none !important;
+  }
+}
+
+
+.footer-right{
+  padding:40px 40px 50px;
+  margin-bottom:20px;
+}
+.footer-right>.post span.icon{
+  display:inline-block;
+  background-image: url("../img/sprite-other.png");
+}
+.footer-right>.post span.pay{
+  background-position: -185px -123px;
+  width:22px;
+  height:15px;
+}
+.footer-right>.post span.zf{
+  background-position: 0px -123px;
+  width:140px;
+  height:34px;
+}
+.footer-right>.post span.deliver{
+  background-position: -150px -123px;
+  width:25px;
+  height:20px;
+}
+.footer-right>.connect>a{
+  color:#8d8d8d;
+  display:block;
+  margin-bottom: 10px;
+}
+
+
+.widget,.breadcrumb{
+  text-align: center;
+}
+.breadcrumb{
+  background-color: #fff;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "|";
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+}
+.breadcrumb>li>a{color:#000}
+

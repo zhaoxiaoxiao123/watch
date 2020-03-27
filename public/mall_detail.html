@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/free.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="css/mall_list.css">
+</head>
+<body onload="ajax()">
+  <header id="header"></header>
+
+  <main id="main">
+    <div class="mian flex flex-column bg-main pt-5" id="detail">
+      
+    </div>
+  </main>
+
+  <footer id="footer"></footer>
+  
+  <!-- 加载头部和尾部 -->
+  <script>
+    $("header").load("mall_header.html");
+    $("footer").load("mall_footer.html");
+  </script>
+  
+  <script src="js/mall_detail.js"></script>
+</body>
+</html>

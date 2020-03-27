@@ -1,0 +1,110 @@
+/*         header-menu      */
+.header-menu{
+  padding:7px 20px 5px;
+}
+.header-menu::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.header-menu>.content{
+  float:left;
+  font-size:13px;
+}
+.header-menu>.logo{
+  float:right;
+  height:30px;
+  line-height:35px;
+  width:230px;
+}
+.header-menu>.logo .icon{
+  display:inline-block;
+  width:30px;height:30px;
+  background-image:url("../img/sprite-other.png");
+}
+.header-menu>.logo .icon.weibo{
+  background-position:-180px -80px;
+}
+.header-menu>.logo .icon.weixin{
+  background-position:-210px -80px;
+}
+.header-menu>.logo .icon.flag{
+  background-position:-240px -116px;
+}
+@media (max-width: 576px) {
+  .header-menu,.main-menu>.logo{
+    display:none;
+  }
+  .main-menu>ul>li>a{
+    opacity:0;
+  }
+  header>.main-menu{
+    padding-top:0;
+  }
+}
+
+@media (min-width: 576px) {
+  .header-menu>.content>span:last-child{
+    display:none;
+  }
+  .main-menu>ul>li:last-child{
+    opacity:0;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-menu>.content>span:last-child{
+    display:inline-block;
+  }
+}
+
+/*      main-menu    样式 */
+.main-menu{
+  padding:40px 35px 0 35px;
+  height:126px;
+  position:relative;
+}
+.main-menu>ul>li{
+  /* width:92px; */
+  height:30px;
+}
+.main-menu>ul>li:hover>a{
+  color:#000;
+}
+.main-menu>ul>li:hover{
+  border-bottom: 1px solid #000;
+}
+.main-menu>ul>li:first-child{
+  padding-top:9px;
+  margin-right:25px;
+}
+.main-menu>ul>li~li{
+  margin:8px 11px 11px 9px;
+  /* margin-left: 20px; */
+}
+.main-menu li a{
+  color:#646464;
+  font-size:18px;
+  text-decoration: none;
+}
+.main-menu ul>span~span{
+  margin-left:15px;
+}
+.main-menu span{
+  display:inline-block;
+  width:29px;
+  height:27px;
+  background-image:url("../img/sprite.png");
+}
+.main-menu span.search{
+  background-position:0px -1932px;
+}
+.main-menu span.message{
+  background-position:-124px -1755px;
+}
+.main-menu span.login{
+  background-position:5px -1755px;
+}
+.main-menu span.cart{
+  background-position:0px -1621px;
+}

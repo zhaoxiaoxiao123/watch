@@ -1,0 +1,144 @@
+body{
+  background:url(../img/bg.jpg) repeat center top;
+}
+body>.container{
+  width:1000px;
+  padding:0;
+}
+a{
+  color:#646464;
+}
+.b-s{
+  box-sizing:border-box;
+}
+.f-s-s{
+  font-size:14px;
+}
+.c-b{
+  color:#000;
+}
+/*      header-menu    样式 */
+.header-menu{
+  background-color:#ebebeb;
+  padding:0 35px;
+}
+.header-menu .right{
+  float:right;
+}
+.header-menu>.left li a,.header-menu>.right li a{
+  color:#646464;
+  font-size:14px;
+  font-weight:500;
+}
+.header-menu>.left li{
+  float:left;
+  padding-top:5px;
+  padding-bottom:5px;
+  margin-right:25px;
+}
+.header-menu::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.header-menu>.right li{
+  float:left;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+/*      main-menu    样式 */
+.main-menu{
+  background-color: #fff;
+  padding:40px 35px 0 35px;
+  height:126px;
+  position:relative;
+}
+.main-menu>ul>li{
+  float:left;
+}
+.main-menu > ul::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.main-menu>ul>li:first-child{
+  padding-top:9px;
+  margin-right:25px;
+}
+.main-menu>ul>li~li{
+  padding:8px 11px 11px 9px;
+}
+.main-menu li a{
+  color:#646464;
+  font-size:18px;
+}
+/*       下拉列表      */
+.l-m{
+  padding:0 35px;
+  width:100%;
+  position:absolute;
+  top:126px;
+  background-color:#fff;
+  left:0;
+  box-sizing: border-box;
+}
+.main-menu>ul>li>div{
+  height:0;
+  overflow:hidden;
+  transition:all .5s linear;
+}
+.main-menu>ul>li[class="product"]:hover>div{
+  height:300px;
+  z-index:999;
+}
+.main-menu>ul>li[class="mall"]:hover>div{
+  height:150px;
+  z-index:999;
+}
+.main-menu>ul>li:hover>a{
+  text-decoration: underline;
+}
+.main-menu .product>.l-m>ul,.main-menu .mall>.l-m>ul:first-child{
+  float:left;
+  margin-right:150px;
+}
+.main-menu .mall>.l-m>ul:last-child{
+  float:right;
+}
+.main-menu .l-m>ul>li{
+  padding-bottom: 5px;
+  font-size:16px;
+}
+.main-menu .l-m>ul>li>a,.main-menu .mall>.l-m>ul:last-child>li:nth-child(2){
+  font-size:14px;
+}
+.main-menu .product>.l-m>ul>li:first-child,.main-menu .product>.l-m>ul:nth-child(2)>li:nth-child(3),.main-menu .mall>.l-m>ul>li:first-child{
+  color:#000;
+  font-size:18px;
+}
+.l-m>ul:nth-child(2)>li:nth-child(3){
+  margin-top:30px;
+}
+.l-m>ul:last-child>li:nth-child(2){
+  font-size:14px;
+  width:80%;
+  word-wrap:break-word;
+}
+/* 伪类::placeholder兼容性 */
+.l-m>ul>li>a>input::placeholder{
+  color:#fff;
+  font-size:16px;
+}
+.l-m>ul>li>a>input::-moz-placeholder{
+  color:#fff;
+  font-size:16px;
+}
+.l-m>ul>li>a>input::-ms-input-placeholder{
+  color:#fff;
+  font-size:16px;
+}
+.l-m>ul>li>a>input::-webkit-input-placeholder{
+  color:#fff;
+  font-size:16px;
+}
+
